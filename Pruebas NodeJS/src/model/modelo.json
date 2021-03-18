@@ -1,0 +1,66 @@
+[{
+  "name": "AutoLearning",
+  "controls": [{
+      "name": "row",
+      "properties": [{
+        "name": "style",
+        "value": "red"
+      }]
+    },
+    {
+      "name": "form",
+      "properties": [{
+        "name": "method",
+        "value": "get"
+      }]
+    },
+    {
+      "name": "outputParam",
+      "properties": [{
+          "name": "name",
+          "value": "isValid"
+        },
+        {
+          "name": "value",
+          "value": "isValidDatoVehiculo($event)"
+        },
+        {
+          "name": "type",
+          "value": "new EventEmitter<boolean>()"
+        }
+      ]
+    },
+    {
+      "name": "inputParam",
+      "properties": [{
+          "name": "name",
+          "value": "changeModeloEmbarcacion"
+        },
+        {
+          "name": "value",
+          "value": "changueModeloEmbarcacion.bind(this)"
+        },
+        {
+          "name": "type",
+          "value": "() => Observable<any>"
+        }
+      ]
+    },
+    {
+      "name": "inputParam",
+      "properties": [{
+          "name": "name",
+          "value": "changeModeloEmbarcacion"
+        },
+        {
+          "name": "value",
+          "value": "changueModeloEmbarcacion.bind(this)"
+        },
+        {
+          "name": "type",
+          "value": "() => Observable<any>"
+        }
+      ]
+    }
+  ]
+}]
