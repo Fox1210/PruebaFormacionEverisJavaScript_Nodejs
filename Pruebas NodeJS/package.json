@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node src/index.js"
   },
-  "author": "",
+  "author": "Pablo Gómez Meléndez",
   "license": "ISC",
   "dependencies": {
     "lodash": "^4.17.21"
