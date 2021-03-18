@@ -1,7 +1,7 @@
 const name = "formacion javascript";
 
 const saveJson = {
-    route: "C:UserspgomegomDesktopPruebas NodeJSsrcmodelarchivo.json",
+    route: "C:\dev\PruebaFormacionEverisJavaScript_Nodejs\Pruebas NodeJS\src\model\archivo.json",
     utf8: "utf8",
     SaveMessage: "The file has been saved!",
 };

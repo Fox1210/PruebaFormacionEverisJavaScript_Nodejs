@@ -1,4 +1,4 @@
 
-const modify = require('./modify.js');
+const main = require('./main.js');
 console.log("Inicio de la ejecucion");
 modify(data);
