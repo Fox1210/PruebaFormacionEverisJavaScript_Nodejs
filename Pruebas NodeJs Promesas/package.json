@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node src/main.js"
   },
   "author": "Pablo Gómez Meléndez",
   "license": "ISC",
