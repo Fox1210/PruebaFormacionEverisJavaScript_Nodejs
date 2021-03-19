@@ -1,6 +1,6 @@
 # Ejercicio de Formacion de JavaScript y NodeJs
 ## Descripcion de la tarea
-Se pide que se cree un un proyeto con la sigiente estructura:
+Creamos un proyeto con la sigiente estructura:
 
 ![Estructura del proyecto](./Archive/Img/Estructura_proyecto.PNG "Estructura del proyecto")
 
