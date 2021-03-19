@@ -1,29 +1,32 @@
+const _ = require("lodash");
+const axios = require("axios");
+const fs = require("fs");
+
 //inportacion de la constantes
 const constantes = require("./constantes");
 
-//inportacion de la libreria lodash
-const _ = require("lodash");
-
-//inportacion de la libreria axios
-const axios = require("axios");
-
-//inportacion de la libreria fs
-const fs = require("fs");
 
 // function main() {
-//     axios.get(constantes.dataAxios.routeApi).then(response=>{
-//         console.log(response.data.data);
-//         const data=response.data.data;
-//         write(data);
-//     });
-
+//     axios.get(constantes.dataAxios.routeApi)
+//         .then(res => {
+//             console.log(res.data.data);
+//             const data = res.data.data;
+//             write(data);
+//         })
+//         .catch(err=>{console.log(err)});
 // }
+
+async function main() {
+    const res = await axios.get(constantes.dataAxios.routeApi).catch(err=>{return null});
+    console.log(res);
+    write(res.data.data);
+}
 
 function write(data) {
     // Crea un archivo donde guarda el Json modificado
     fs.writeFile(
         constantes.saveJson.route,
-        JSON.stringify(data),
+        JSON.stringify(data,false,4),
         constantes.saveJson.utf8,
         (err) => {
             if (err) throw err;
