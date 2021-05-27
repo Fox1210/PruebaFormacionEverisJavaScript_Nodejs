@@ -6,21 +6,21 @@ const fs = require("fs");
 const constantes = require("./constantes");
 
 
-// function main() {
-//     axios.get(constantes.dataAxios.routeApi)
-//         .then(res => {
-//             console.log(res.data.data);
-//             const data = res.data.data;
-//             write(data);
-//         })
-//         .catch(err=>{console.log(err)});
-// }
-
-async function main() {
-    const res = await axios.get(constantes.dataAxios.routeApi).catch(err=>{return null});
-    console.log(res);
-    write(res.data.data);
+function main() {
+    axios.get(constantes.dataAxios.routeApi)
+        .then(res => {
+            console.log(res.data.data);
+            const data = res.data.data;
+            write(data);
+        })
+        .catch(err=>{console.log(err)});
 }
+
+// async function main() {
+//     const res = await axios.get(constantes.dataAxios.routeApi).catch(err=>{return null});
+//     console.log(res);
+//     write(res.data.data);
+// }
 
 function write(data) {
     // Crea un archivo donde guarda el Json modificado
